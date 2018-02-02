@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "cross-env GITTAG=$(git describe --tags $(git rev-list --tags --max-count=1)) HASH=$(git rev-parse HEAD) STUFF1=\"stuff1\" STUFF2=stuff2 jest --watchAll",
+    "test:watch2": "cross-env  STUFF1=\"stuff1\" STUFF2=stuff2 GITTAG=$(git describe --tags $(git rev-list --tags --max-count=1)) HASH=$(git rev-parse HEAD) jest --watchAll",
     "test:no-git": "cross-env STUFF1=\"stuff1\" STUFF2=stuff2 jest --watchAll"
   },
   "author": "Lee Blazek",
