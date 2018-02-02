@@ -1,0 +1,11 @@
+{
+  "name": "xplat-test",
+  "version": "1.0.0",
+  "description": "to test env vars on windows osx",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Lee Blazek",
+  "license": "ISC"
+}
