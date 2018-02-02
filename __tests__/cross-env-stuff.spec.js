@@ -1,5 +1,6 @@
 
 describe('cross env vars', () => {
+  // NOTE:Failed on windows
   test('should have stuff1. Has escaped qoutes',()=>{
     expect(process.env.STUFF1).toBe('stuff1')
   })
