@@ -8,7 +8,7 @@
     "test": "jest",
     "test:watch": "cross-env GITTAG=$(git describe --tags $(git rev-list --tags --max-count=1)) HASH=$(git rev-parse HEAD) STUFF1=\"stuff1\" STUFF2=stuff2 jest --watchAll",
     "test:watch2": "cross-env  STUFF1=\"stuff1\" STUFF2=stuff2  HASH=$(git rev-parse HEAD) jest --watchAll",
-    "test:watch3": "cross-env  STUFF1=\"stuff1\" STUFF2=stuff2 GITTAG=$npm_package_version BUILD=$npm_package_build jest",
+    "test:watch3": "cross-env  STUFF1=\"stuff1\" STUFF2=stuff2 VERSION=$npm_package_version BUILD=$npm_package_build jest",
     "test:no-git": "cross-env STUFF1=\"stuff1\" STUFF2=stuff2 jest --watchAll"
   },
   "author": "Lee Blazek",
